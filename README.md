@@ -16,6 +16,7 @@ Sender and Receiver only DirectX 11.
 * 4.21
 * 4.22
 * 4.23
+* 4.24
 
 
 # Installation and Use
