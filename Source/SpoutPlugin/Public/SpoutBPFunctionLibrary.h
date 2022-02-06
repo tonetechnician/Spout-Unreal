@@ -67,7 +67,7 @@ struct FSenderStruct
 		UMaterialInstanceDynamic* MaterialInstanceColor;
 
 		// Pointer to our Texture's resource
-		FTexture2DResource* Texture2DResource;
+		FTextureResource* Texture2DResource;
 
 		// Regions we need to update
 		FUpdateTextureRegion2D* UpdateRegions;
