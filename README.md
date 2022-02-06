@@ -70,7 +70,6 @@ It will start to build.
 
 ![Image 11](https://L05.github.io/Spout-UE4/images/SpoutExample_Instructions_11.png)
 
-For video instructions, please refer to [Unreal Engine 4 and Lightact Video Tutorials](https://www.youtube.com/playlist?list=PLcNPGta1d2XDcSsz8zcW0f2lPSawnW3mR), which provides a good step-by-Image walkthrough of how to set up your project for use with the plugin.
 
 ## Sending Spout
 
