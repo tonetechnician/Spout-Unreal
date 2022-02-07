@@ -1,9 +1,7 @@
-*Modification of original plugin by [AleDel](https://github.com/AleDel/Spout-UE4) with UE versions 4.19+.*
+# Spout-Unreal
+This is a [Spout](http://spout.zeal.co/) Plugin for Unreal Engine. It allows you to send and receive textures using the Spout framework.
 
-# Spout-UE4
-This is a [Spout](http://spout.zeal.co/) Plugin for Unreal Engine. It allows you to send and receive textures using Spout framework.
-
-Sender and Receiver only DirectX 11.
+Sender and Receiver, DirectX 11 only.
 
 * [Installation and Use](#installation-and-use)
 * [Sending Spout](#sending-spout)
@@ -11,13 +9,9 @@ Sender and Receiver only DirectX 11.
 * [Packaged game](#packaged-game)
 
 **This was tested with:**
-* 4.19
-* 4.20
-* 4.21
-* 4.22
-* 4.23 
-* 4.24 (use 4.24 branch)
-* 4.27 (use 4.27 branch)
+* [4.24](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.24)
+* [4.27](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.27)
+* [5.0](https://github.com/TrigonVirgo/Spout-Unreal/tree/5.0)
 
 
 # Installation and Use
@@ -73,11 +67,11 @@ It will start to build.
 
 ## Sending Spout
 
-This is done with the **Spout sender** node which has can send texture either from the Game viewport or from a Render Targert 2D: 
+This is done with the **Spout sender** node which can send texture either from the Game viewport or from a Render Targert 2D: 
   * **Game Viewport** sends the image of the viewport, but please note that it doesn't work in standalone or packaged game.
   * **TextureRenderTarget2D** in which case you should create a _SceneCaptureComponent2D_ and a *Render target 2D* which you should reference in the node.
 
-use **Close Sender** node to close Spouts. The best way is to connect it to **Event EndPlay** node.
+Use **Close Sender** node to close Spouts. The best way is to connect it to **Event EndPlay** node.
 
 ## Install Example
 
