@@ -8,9 +8,9 @@ Sender and Receiver, DirectX 11 only.
 * [Install Example](#install-example)
 * [Packaged game](#packaged-game)
 
-**This was tested with:**
+**Available versions:**
 * [4.24](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.24)
-* [4.27](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.27)
+* **[4.27](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.27) <-- Current Selection**
 * [5.0](https://github.com/TrigonVirgo/Spout-Unreal/tree/5.0)
 
 
