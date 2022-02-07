@@ -14,6 +14,8 @@ Sender and Receiver, DirectX 11 only.
 * [4.27](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.27)
 * **[5.0](https://github.com/TrigonVirgo/Spout-Unreal/tree/5.0) <-- Current Selection**
 
+Note: The Spout-Unreal 5.0 version has been tested successfully with Epic's GitHub branch for Unreal Engine 5.0 as of 2/6/2022. The intent is to check this plugin again once UE5 is released; please use accordingly.
+
 
 # Installation and Use
 
