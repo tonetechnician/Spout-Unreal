@@ -3,12 +3,13 @@ This is a [Spout](http://spout.zeal.co/) Plugin for Unreal Engine. It allows you
 
 Sender and Receiver, DirectX 11 only.
 
+* [Available Versions](#available-versions)
 * [Installation and Use](#installation-and-use)
 * [Sending Spout](#sending-spout)
 * [Install Example](#install-example)
 * [Packaged game](#packaged-game)
 
-**Available versions:**
+# Available Versions
 * [4.24](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.24)
 * **[4.27](https://github.com/TrigonVirgo/Spout-Unreal/tree/4.27) <-- Current Selection**
 * [5.0](https://github.com/TrigonVirgo/Spout-Unreal/tree/5.0)
