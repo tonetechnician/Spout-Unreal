@@ -1,12 +1,12 @@
 #pragma once
 
 #if PLATFORM_WINDOWS
-#include "AllowWindowsPlatformTypes.h"
+#include "Windows/AllowWindowsPlatformTypes.h"
 #endif
 #include "Spout.h"
 #include <d3d11.h>
 #if PLATFORM_WINDOWS
-#include "HideWindowsPlatformTypes.h"
+#include "Windows/HideWindowsPlatformTypes.h"
 #endif
 
 #include "SpoutBPFunctionLibrary.generated.h"
@@ -34,7 +34,7 @@ enum class ESpoutSendTextureFrom : uint8
 	TextureRenderTarget2D
 };
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FSenderStruct
 {
 	GENERATED_USTRUCT_BODY()
@@ -67,13 +67,17 @@ struct FSenderStruct
 		UMaterialInstanceDynamic* MaterialInstanceColor;
 
 		// Pointer to our Texture's resource
-		FTexture2DResource* Texture2DResource;
+		FTextureResource* Texture2DResource;
 
 		// Regions we need to update
 		FUpdateTextureRegion2D* UpdateRegions;
 
 		//Sender
 		ID3D11Texture2D *activeTextures;
+
+		ID3D11Resource * sharedResource;
+		ID3D11ShaderResourceView * rView;
+		ID3D11Texture2D* texTemp;
 
 	void SetName(FName NewsName)
 	{
@@ -104,7 +108,7 @@ struct FSenderStruct
 
 
 UCLASS(ClassGroup = Spout, Blueprintable)
-class USpoutBPFunctionLibrary : public UBlueprintFunctionLibrary
+class SPOUTPLUGIN_API USpoutBPFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
