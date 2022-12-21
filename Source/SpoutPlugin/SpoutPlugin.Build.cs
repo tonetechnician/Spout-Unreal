@@ -106,7 +106,7 @@ namespace UnrealBuildTool.Rules
 
             // Implemented this method for copying DLL to packaged project's Binaries folder
             // https://answers.unrealengine.com/questions/842286/specify-dll-location-using-plugin-in-cooked-projec.html
-            if ((Target.Platform == UnrealTargetPlatform.Win64) || (Target.Platform == UnrealTargetPlatform.Win32))
+            if (Target.Platform == UnrealTargetPlatform.Win64)
             {
                 string PlatformString = (Target.Platform == UnrealTargetPlatform.Win64) ? "amd64" : "x86";
 
